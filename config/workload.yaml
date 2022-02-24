@@ -6,6 +6,13 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: spring-cloud-config-server
 spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
+  - name: labels
+    value:
+      anetworking.knative.dev/visibility: cluster-local
   source:
     git:
       url: https://github.com/gm2552/spring-cloud-config-server.git
