@@ -1,2 +1,1 @@
-spring.cloud.config.server.git.uri: https://github.com/DirectProjectJavaRI/direct-cloud-config-repo
 spring.cloud.kubernetes.config.name: spring-cloud-config-server-app

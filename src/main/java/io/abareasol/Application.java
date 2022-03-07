@@ -23,6 +23,6 @@ public class Application implements CommandLineRunner
 	throws Exception
 	{
 		System.out.println("ConfigMap test data setting: " + env.getProperty("spring.testdata.data"));
-		System.out.println("Namespace: " + env.getProperty("spring.cloud.kubernetes.config.namespace"));
+		System.out.println("Namespace: " + env.getProperty("spring.cloud.kubernetes.client.namespace"));
 	}
 }
